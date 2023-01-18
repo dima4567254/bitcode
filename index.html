@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon"> -->
     <title>bitcode</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -74,23 +74,28 @@
                 </div>
             </div>
         </section>
-<!-- один инем нужно будет оставить пустым -->
-<!-- текст наверное тоже надо удалить -->
+        <!-- один инем нужно будет оставить пустым -->
+        <!-- текст наверное тоже надо удалить -->
         <section class="offer">
             <div class="container">
                 <div class="offer__title title">
                     ми пропонуємо
                 </div>
                 <ul class="offer__wrapper">
-                    <li class="offer__item">
-                        <img class="offer__img" src="images/services-for-enterprises.jpg" alt="послуги для підприємств">
-                        <div class="offer__text">
-                            <p>
-                                послуги для підприємств
-                            </p>
+                    <li class="offer__item offer__item--1" id="item">
+                        <div class="offer__box">
+                            <div class="offer__images">
+                                <img class="offer__img" src="images/services-for-enterprises.jpg"
+                                    alt="послуги для підприємств">
+                            </div>
+                            <div class="offer__subtitle">
+                                <p>
+                                    послуги для підприємств
+                                </p>
+                            </div>
                         </div>
-                        <ul class="offer__items">
-                            <li class="">
+                        <ul class="offer__items offer__items--1">
+                            <li>
                                 <div class="offer__text">
                                     <p>
                                         Технічна підтримка та IT-обслуговування.
@@ -104,7 +109,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <li >
+                            <li>
                                 <div class="offer__text">
                                     <p>
                                         Мережеве обладнання.
@@ -127,13 +132,19 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="offer__item">
-                        <img class="offer__img" src="images/services-for-business.jpg" alt="послуги для бізнесу (B2B)">
-                        <div class="offer__text">
-                            <p>послуги для бізнесу (B2B)</p>
+                    <li class="offer__item offer__item--2">
+                        <div class="offer__box">
+                            <div class="offer__images">
+                                <img class="offer__img" src="images/services-for-business.jpg"
+                                    alt="послуги для бізнесу (B2B)">
+                            </div>
+                            <div class="offer__subtitle">
+                                <p>послуги для бізнесу (B2B)</p>
+                            </div>
                         </div>
-                        <ul class="offer__items">
+                        <ul class="offer__items offer__items--2">
                             <li>
+                                <!-- возможно титул -->
                                 <div class="offer__text">
                                     <p>
                                         Розробка програмного забезпечення.
@@ -170,12 +181,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="offer__item">
-                        <img class="offer__img" src="images/consultation.jpg" alt="консультація">
-                        <div class="offer__text">
-                            <p>консультація</p>
+                    <li class="offer__item offer__item--3">
+                        <div class="offer__box">
+                            <div class="offer__images">
+                                <img class="offer__img" src="images/consultation.jpg" alt="консультація">
+                            </div>
+                            <div class="offer__subtitle">
+                                <p>консультація</p>
+                            </div>
                         </div>
-                        <ul class="offer__items">
+                        <ul class="offer__items offer__items--3">
                             <li>
                                 <div class="offer__text">
                                     <p>
@@ -186,7 +201,8 @@
                             <li>
                                 <div class="offer__text">
                                     <p>
-                                        Виявлення ключових показників ефективності, практичні рекомендації щодо оптимізації, масштабування та систематизації.
+                                        Виявлення ключових показників ефективності, практичні рекомендації щодо
+                                        оптимізації, масштабування та систематизації.
                                     </p>
                                 </div>
                             </li>
@@ -203,8 +219,43 @@
             </div>
         </section>
 
-        <section class="">
+        <section class="services">
             <div class="container">
+                <h2 class="services__title title">
+                    Послуги
+                </h2>
+                <ul class="services__wrapper">
+                    <li class="services__item">
+                        <div class="services__inner">
+                            <div class="services__box">
+                                <p>it</p>
+                                <p>аутсорсинг</p>
+                            </div>
+                            <div class="services__images">
+                                <img class="services__img" src="images/1.jpg" alt="1-ipad">
+                                <div class="services__text">
+                                    <p>
+                                        IT аутсорсинг – це порівняно молода гілка бізнес-послуг на теренах нашої країни.
+                                        Діяльність
+                                        компаній, які пропонують послуги IT аутсорсингу, поширюється переважно на
+                                        автономне
+                                        обслуговування комп'ютерів клієнта. Наприклад, якщо вам економічно невигідно
+                                        утримувати
+                                        в
+                                        штаті системного адміністратора, то ви спокійно можете укласти клієнтську угоду
+                                        з
+                                        компанією
+                                        аутсорсерів і отримати тим самим постійне професійне обслуговування та
+                                        налаштування
+                                        ваших
+                                        комп'ютерів.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
 
             </div>
         </section>

@@ -31,10 +31,14 @@ body {
     border: 0;
 }
 
-/*
+
 .title {
-    @extend %title;
-}*/
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $black3;
+}
 
 .main {
     flex-grow: 1;
