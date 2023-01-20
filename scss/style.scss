@@ -23,6 +23,28 @@
 
 .container {}
 
+.services__title,
+.offer__title,
+.advantages__title {
+    margin-bottom: 70px;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 60px;
+    }
+
+    @media (max-width: 992px) {
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+}
+
 .menu {
     // max-width: 1000px;
     padding: 50px 0;
@@ -127,11 +149,11 @@
 }
 
 .offer {
-    padding: 200px 0;
+    padding: 100px 0;
 
-    @media (max-width: 1200px) {
-        padding: 100px 0;
-    }
+    // @media (max-width: 1200px) {
+    //     padding: 100px 0;
+    // }
 
     @media (max-width: 992px) {
         padding: 70px 0;
@@ -145,27 +167,6 @@
         padding: 30px 0;
     }
 
-    &__title {
-        margin-bottom: 70px;
-
-        @media (max-width: 1200px) {
-            margin-bottom: 60px;
-        }
-
-        @media (max-width: 992px) {
-            margin-bottom: 50px;
-        }
-
-        @media (max-width: 768px) {
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 576px) {
-            margin-bottom: 20px;
-        }
-
-    }
-
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -174,6 +175,10 @@
 
     &__item {
         max-width: 360px;
+        cursor: pointer;
+    }
+
+    &__box {
         cursor: pointer;
 
         &::before {
@@ -215,12 +220,6 @@
         }
     }
 
-    &__box {
-        cursor: pointer;
-        // https://www.youtube.com/watch?v=R7yB2ganPho
-
-    }
-
     &__images {
         line-height: 0;
     }
@@ -259,32 +258,7 @@
 }
 
 .services {
-    padding: 200px 0;
-
-    &__title {
-        margin-bottom: 70px;
-
-        @media (max-width: 1200px) {
-            margin-bottom: 60px;
-        }
-
-        @media (max-width: 992px) {
-            margin-bottom: 50px;
-        }
-
-        @media (max-width: 768px) {
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 576px) {
-            margin-bottom: 30px;
-        }
-    }
-
-    &__items {
-        // display: flex;
-        // justify-content: space-between;
-    }
+    padding: 100px 0;
 
     &__inner {
         display: flex;
@@ -298,8 +272,6 @@
                 opacity: 1;
                 background: rgba(2, 38, 67, 0.7);
             }
-
-            // сделать ховер на весь блок
         }
 
         &:active {
@@ -358,6 +330,92 @@
         transition: .5s;
     }
 }
+
+.advantages {
+    padding: 100px 0;
+    text-align: start;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    &__img {
+        // width: 550px;
+        max-width: 50%;
+        height: 900px;
+    }
+
+    &__title {
+        font-size: 36px;
+        letter-spacing: 0.04em;
+        // потом поискать etter-spacing
+        text-transform: uppercase;
+        color: $black3;
+        text-align: start;
+    }
+
+    &__box {
+        width: 50%;
+    }
+
+    &__items {}
+
+    &__item {
+        // display: flex;
+        margin-bottom: 80px;
+
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        color: $black3;
+        // тут разобраться что задавать
+    }
+
+    &__text {}
+}
+
+.statistics {
+    margin: 100px 0;
+    padding: 100px 0;
+    background-image: url('../images/statistics.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(115, 80, 64, 0.3);
+    }
+
+    &__item {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__number {
+        font-weight: 600;
+        font-size: 96px;
+        // color: $white;
+    }
+}
+
+
+
 
 // padding: 200px 0;
 
