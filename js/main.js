@@ -10,6 +10,47 @@ $(function name(params) {
         $('.offer__items--3').slideToggle();
     });
 
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+
+    
+    // var swiper = new Scwiper(".myswiper", {
+    //     // !!!
+    //     slidesPerView: 4,
+    //     // spaceBetween: 30,
+    //     loop: true,
+    //     loopedslides: 2,
+
+        // navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        // },
+
+        // breakpoints: {
+
+        //     1200: {
+        //         slidesPerView: 4,
+        //     },
+
+        //     992: {
+        //         slidesPerView: 3,
+
+
+        //     },
+
+        //     600: {
+        //         slidesPerView: 2,
+        //     },
+
+        //     320: {
+        //         slidesPerView: 1,
+        //     },
+        // },
+    // });
+
     // let showModal = document.querySelector('#item');
     // let hideModal = document.querySelector('#modal-hide');
     // // при клике
