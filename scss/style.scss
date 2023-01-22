@@ -176,6 +176,7 @@
     &__item {
         max-width: 360px;
         cursor: pointer;
+        position: relative;
     }
 
     &__box {
@@ -421,52 +422,111 @@
     }
 }
 
+.about {
+    padding: 100px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__box {
+        width: 50%;
+        margin-right: 30px;
+    }
+
+    &__title {
+        font-weight: 500;
+        // подключить 500
+        margin-bottom: 50px;
+    }
+
+
+    &__text {
+        font-size: 20px;
+    }
+
+    &__text p {
+        margin-bottom: 30px;
+    }
+}
+
 .swiper {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    margin-left: 30px;
+    padding-bottom: 40px;
+
+    &__img {
+        width: 560px;
+        height: 790px;
+    }
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+.mySwiper {}
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-pagination {
+    // left: 50%;
+    // transform: translateX(-50%);
+
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 5px;
 }
 
-html,
-body {
-    position: relative;
-    height: 100%;
+.swiper-pagination-bullet {
+    background-color: $white;
+    // background: white;
+    border: 1px solid $black;
+    opacity: 1;
 }
 
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+.swiper-pagination-bullet-active {
+    // background-color: $black;
+    background: $black;
+    // border: 1px solid $black3;
+    // color: #000;
+
 }
+
+.partners {
+    padding: 100px 0;
+
+    &__title {
+        margin-bottom: 70px;
+    }
+
+    &__text {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0 20px;
+    }
+
+    &__img {
+        // width: 100%;
+        // height: 100%;
+        max-width: 200px;
+        max-height: 200px;
+        object-fit: contain;
+    }
+}
+
+
 
 // padding: 200px 0;
 
