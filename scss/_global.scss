@@ -4,12 +4,28 @@ body {
 }
 
 body {
-    // font-family: var(--bs-font-sans-serif);
-    font-size: 1rem;//!!!
+    // потом все проверить
+    font-size: 1rem; //!!!
     font-weight: 400;
     font-family: 'Poppins';
     line-height: 1.5;
     color: $black2;
+
+    @media (max-width: 1200px) {
+        line-height: 1.4;
+    }
+
+    @media (max-width: 992px) {
+        line-height: 1.3;
+    }
+
+    @media (max-width: 768px) {
+        line-height: 1.2;
+    }
+
+    @media (max-width: 576px) {
+        line-height: 1.1;
+    }
 }
 
 .sr-only {
@@ -31,6 +47,60 @@ body {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $black3;
+
+    @media (max-width: 1200px) {
+        font-size: 34px;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 32px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 26px;
+    }
+
+    &--bem {
+        margin-bottom: 70px;
+
+        @media (max-width: 1200px) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 992px) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section {
+    &--bem {
+        padding: $padding-main 0;
+
+        @media (max-width: 992px) {
+            padding: $padding-992 0;
+        }
+
+        @media (max-width: 768px) {
+            padding: $padding-768 0;
+        }
+
+        @media (max-width: 576px) {
+            padding: $padding-576 0;
+        }
+    }
 }
 
 .main {
@@ -46,3 +116,26 @@ body {
 .mirror {
     flex-direction: row-reverse;
 }
+
+.btn {
+    font-weight: 600;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    transition: color 0.5s;
+
+    &:focus {
+        color: $focus;
+    }
+
+    &:hover {
+        background-color: $green;
+    }
+
+    &:active {
+        color: $active;
+    }
+}
+
+// [class*="__container"] {
+//     background-color: red;
+// }

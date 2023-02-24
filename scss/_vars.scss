@@ -12,8 +12,8 @@ $white: #FFFFFF;
 $black: #000000;
 $black2: #212529;
 $black3: #022643;
-
 $title: #436372;
+$btn-menu:silver;
 
 
 /*$ac: #fcd7b6;
@@ -34,33 +34,70 @@ $ac: #fcd7b6;
 $green: #14B4BE;
 
 
-@mixin line-clamp($line-clamp, ) {
-  display: -webkit-box;
-  -webkit-line-clamp: $line-clamp;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+//section
+$padding-main:100px ;
+$padding-1200:70px ;
+$padding-992:100px ;//70
+$padding-768:100px ;//50
+$padding-576:100px ;
 
-}
+// padding: $padding-main 15px;
 
-@mixin line-height($font-size, $line-height, ) {
+// @media (max-width: 992px) {
+//     padding: $padding-992 15px;
+// }
 
-  line-height: ($line-height / $font-size)
-}
+// @media (max-width: 768px) {
+//     padding: $padding-768 15px;
+// }
+
+// @media (max-width: 576px) {
+//     padding: $padding-576 15px;
+// }
+
+// Ограничивающий контейнер ======================================================================================================================================================================================================================
 
 /*
-@include clamp(5);
-*/
-
-$browser-context: 16;
-
-@function em($pixels, $context: $browser-context) {
-  @if (unitless($pixels)) {
-    $pixels: $pixels * 1px;
-  }
-
-  @if (unitless($context)) {
-    $context: $context * 1px;
-  }
-
-  @return $pixels / $context * 1em;
-}
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+// */
+// @if ($responsiveType==1) {
+// 	// Отзывчивая
+// 	[class*="__container"] {
+// 		@if ($maxWidthContainer>0) {
+// 			max-width: rem($maxWidthContainer);
+// 			box-sizing: content-box;
+// 			margin: 0 auto;
+// 		}
+// 		@if ($containerPadding>0) {
+// 			padding: 0 rem(math.div($containerPadding, 2));
+// 		}
+// 	}
+// } @else {
+// 	// По брейк-поинтам
+// 	[class*="__container"] {
+// 		margin: 0 auto;
+// 		@if ($maxWidthContainer>0) {
+// 			max-width: rem($maxWidthContainer);
+// 			box-sizing: content-box;
+// 		} @else {
+// 			@if ($containerPadding>0) {
+// 				padding: 0 rem(math.div($containerPadding, 2));
+// 			}
+// 		}
+// 		@media (max-width: $pc) {
+// 			max-width: rem(970);
+// 		}
+// 		@media (max-width: $tablet) {
+// 			max-width: rem(750);
+// 		}
+// 		@media (max-width: $mobile) {
+// 			max-width: none;
+// 			@if ($containerPadding>0 and $maxWidthContainer>0) {
+// 				padding: 0 rem(math.div($containerPadding, 2));
+// 			}
+// 		}
+// 	}
+// }

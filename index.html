@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="#" type="image/x-icon"> -->
-    <title>bitcode</title>
+    <title>Bitcode</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
 </head>
 
 
 <!--
-    в 1 блоке баг рука
+     <!-- попробоваь потом включить лази режим 472 
+        альт 
+        переименовать картинки
 
+        фокус
+        скроллы
+        кремт
+      
 -->
 
 <body>
@@ -24,12 +27,12 @@
             <nav class="menu">
                 <ul class="menu__items">
                     <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="#">
+                        <a class="menu__link menu__link--active" href="#services">
                             Послуги
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="#service">
+                        <a class="menu__link" href="#about">
                             Про нас
                         </a>
                     </li>
@@ -39,12 +42,34 @@
                 </a>
                 <ul class="menu__items">
                     <li class="menu__item">
-                        <a class="menu__link" href="#products">
+                        <a class="menu__link" href="#partners">
                             Партнери
                         </a>
                     </li>
                     <li class="menu__item">
+                        <a class="menu__link" href="#contacts">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu__mobile">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="#services">
+                            Послуги
+                        </a>
+                    </li>
+                    <li class="menu__item">
                         <a class="menu__link" href="#about">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#partners">
+                            Партнери
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contacts">
                             Контакти
                         </a>
                     </li>
@@ -60,25 +85,30 @@
     <main class="main">
         <section class="intro">
             <div class="container">
+                <h1 class="sr-only">
+                    Сайт надання IT-послуг
+                </h1>
                 <div class="intro__wrapper">
                     <div class="intro__box">
+                        <h2 class="sr-only">
+                            Секція знайомства з сайтом
+                        </h2>
                         <div class="intro__text">
                             <p>
                                 BITCODE – сьогодні ми дбаємо про Ваше «завтра»
                             </p>
                         </div>
-                        <a class="intro__link" href="#">
+                        <a class="intro__link btn" href="#">
                             Залишити заявку
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- один инем нужно будет оставить пустым -->
-        <!-- текст наверное тоже надо удалить -->
-        <section class="offer">
+
+        <section class="offer section section--bem">
             <div class="container">
-                <h2 class="offer__title title">
+                <h2 class="offer__title title title--bem">
                     ми пропонуємо
                 </h2>
                 <ul class="offer__wrapper">
@@ -96,39 +126,19 @@
                         </div>
                         <ul class="offer__items offer__items--1">
                             <li>
-                                <div class="offer__text">
-                                    <p>
-                                        Технічна підтримка та IT-обслуговування.
-                                    </p>
-                                </div>
+                                Технічна підтримка та IT-обслуговування.
                             </li>
                             <li>
-                                <div class="offer__text">
-                                    <p>
-                                        Файлові сервери
-                                    </p>
-                                </div>
+                                Файлові сервери
                             </li>
                             <li>
-                                <div class="offer__text">
-                                    <p>
-                                        Мережеве обладнання.
-                                    </p>
-                                </div>
+                                Мережеве обладнання.
                             </li>
                             <li>
-                                <div class="offer__text">
-                                    <p>
-                                        Створення та обслуговування корпоративної пошти.
-                                    </p>
-                                </div>
+                                Створення та обслуговування корпоративної пошти.
                             </li>
                             <li>
-                                <div class="offer__text">
-                                    <p>
-                                        Ремонт серверів, офісної техніки.
-                                    </p>
-                                </div>
+                                Ремонт серверів, офісної техніки.
                             </li>
                         </ul>
                     </li>
@@ -144,29 +154,19 @@
                         </div>
                         <ul class="offer__items offer__items--2">
                             <li>
-                                <p>
-                                    Розробка програмного забезпечення.
-                                </p>
+                                Розробка програмного забезпечення.
                             </li>
                             <li>
-                                <p>
-                                    Комплексна розробка веб-додатків і створення софту будь-якої складності.
-                                </p>
+                                Комплексна розробка веб-додатків і створення софту будь-якої складності.
                             </li>
                             <li>
-                                <p>
-                                    Навчання та тренінги для персоналу, який користуватиметься продуктами.
-                                </p>
+                                Навчання та тренінги для персоналу, який користуватиметься продуктами.
                             </li>
                             <li>
-                                <p>
-                                    Створення та обслуговування корпоративної пошти.
-                                </p>
+                                Створення та обслуговування корпоративної пошти.
                             </li>
                             <li>
-                                <p>
-                                    Хмарний консалтинг.
-                                </p>
+                                Хмарний консалтинг.
                             </li>
                         </ul>
                     </li>
@@ -181,20 +181,14 @@
                         </div>
                         <ul class="offer__items offer__items--3">
                             <li>
-                                <p>
-                                    Повна бізнес-аналітика чинних процесів компанії.
-                                </p>
+                                Повна бізнес-аналітика чинних процесів компанії.
                             </li>
                             <li>
-                                <p>
-                                    Виявлення ключових показників ефективності, практичні рекомендації щодо
-                                    оптимізації, масштабування та систематизації.
-                                </p>
+                                Виявлення ключових показників ефективності, практичні рекомендації щодо
+                                оптимізації, масштабування та систематизації.
                             </li>
                             <li>
-                                <p>
-                                    Оцінка безпеки та виявлення ризиків.
-                                </p>
+                                Оцінка безпеки та виявлення ризиків.
                             </li>
                         </ul>
                     </li>
@@ -202,20 +196,22 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
-                <h2 class="services__title title">
+                <h2 class="services__title title title--bem">
                     Послуги
                 </h2>
                 <ul class="services__items">
                     <li class="services__item">
                         <div class="services__inner">
-                            <div class="services__box">
+                            <div class="services__info">
                                 <p>it</p>
                                 <p>аутсорсинг</p>
                             </div>
-                            <div class="services__images">
-                                <img class="services__img" src="images/1.jpg" alt="1-ipad">
+                            <div class="services__box">
+                                <div class="services__images">
+                                    <img class="services__img" src="images/1.jpg" alt="1-ipad">
+                                </div>
                                 <div class="services__text">
                                     <p>
                                         IT аутсорсинг – це порівняно молода гілка бізнес-послуг на теренах нашої країни.
@@ -239,12 +235,14 @@
                     </li>
                     <li class="services__item">
                         <div class="services__inner mirror">
-                            <div class="services__box">
-                                <p>it</p>
-                                <p>аутсорсинг</p>
+                            <div class="services__info">
+                                <p>Розробка</p>
+                                <p>ПЗ</p>
                             </div>
-                            <div class="services__images">
-                                <img class="services__img" src="images/0.jpg" alt="1-ipad">
+                            <div class="services__box">
+                                <div class="services__images">
+                                    <img class="services__img" src="images/0.jpg" alt="1-ipad">
+                                </div>
                                 <div class="services__text">
                                     <p>
                                         Ми пропонуємо повний цикл розробки програмного забезпечення, починаючи з
@@ -258,18 +256,21 @@
                     </li>
                     <li class="services__item">
                         <div class="services__inner ">
-                            <div class="services__box">
-                                <p>it</p>
-                                <p>аутсорсинг</p>
+                            <div class="services__info">
+                                <p>IP</p>
+                                <p>телефонія</p>
                             </div>
-                            <div class="services__images">
-                                <img class="services__img" src="images/3.jpg" alt="1-ipad">
+                            <div class="services__box">
+                                <div class="services__images">
+                                    <img class="services__img" src="images/3.jpg" alt="1-ipad">
+                                </div>
                                 <div class="services__text">
                                     <p>
                                         P-телефонією називають голосовий зв'язок, який здійснюється за мережами,
                                         призначеними для передачі даних, частіше — по IP-мережах (термін IP
                                         розшифровується як «Internet Protocol»). В даний час зв'язок з використанням
-                                        IP-телефонії стала витісняти традиційні мережі телефонного зв'язку завдяки своїй
+                                        IP-телефонії стала витісняти традиційні мережі телефонного зв'язку завдяки
+                                        своїй
                                         низькій вартості дзвінків, легкості розгортання, високої якості з'єднання та
                                         зв'язку, їхній порівняльній безпеці, простоті конфігурування.
                                     </p>
@@ -279,19 +280,23 @@
                     </li>
                     <li class="services__item">
                         <div class="services__inner mirror">
-                            <div class="services__box">
+                            <div class="services__info">
                                 <p>web</p>
                                 <p>дизайн</p>
                             </div>
-                            <div class="services__images">
-                                <img class="services__img" src="images/4.jpg" alt="1-ipad">
+                            <div class="services__box">
+                                <div class="services__images">
+                                    <img class="services__img" src="images/4.jpg" alt="1-ipad">
+                                </div>
                                 <div class="services__text">
                                     <p>
-                                        У нашій компанії ми розробляємо сайти, які дають прибуток. Великий досвід роботи
+                                        У нашій компанії ми розробляємо сайти, які дають прибуток. Великий досвід
+                                        роботи
                                         дозволяє нам надавати послуги високої якості в галузі створення веб-дизайну
                                         сайту. Всі створені нами ресурси зручні, оригінальні та мають привабливий
                                         вигляд. А головне, розроблені нашою компанією сайти виконують функцію
-                                        інструменту продажу, дозволяючи розширювати коло потенційних клієнтів, тим самим
+                                        інструменту продажу, дозволяючи розширювати коло потенційних клієнтів, тим
+                                        самим
                                         збільшуючи прибуток вашої компанії.
                                 </div>
                             </div>
@@ -299,15 +304,18 @@
                     </li>
                     <li class="services__item">
                         <div class="services__inner">
-                            <div class="services__box">
+                            <div class="services__info">
                                 <p>відновлення</p>
                                 <p>даних</p>
                             </div>
-                            <div class="services__images">
-                                <img class="services__img" src="images/5.jpg" alt="1-ipad">
+                            <div class="services__box">
+                                <div class="services__images">
+                                    <img class="services__img" src="images/5.jpg" alt="1-ipad">
+                                </div>
                                 <div class="services__text">
                                     <p>
-                                        Втрата важливої інформації та її недоступність через цифрові носії можуть бути
+                                        Втрата важливої інформації та її недоступність через цифрові носії можуть
+                                        бути
                                         як випадковістю - результатом поломки, шлюбу, некоректного поводження, так і
                                         навмисним кроком з боку зловмисників з метою «стерти» невигідні їм
                                         дані чи «цифрові» докази злочину. В обох випадках організації,
@@ -320,38 +328,40 @@
                     </li>
                     <li class="services__item">
                         <div class="services__inner mirror">
-                            <div class="services__box">
+                            <div class="services__info">
                                 <p>выделение</p>
                                 <p>сервера</p>
                             </div>
-                            <div class="services__images">
-                                <img class="services__img" src="images/6.jpg" alt="1-ipad">
+                            <div class="services__box">
+                                <div class="services__images">
+                                    <img class="services__img" src="images/6.jpg" alt="1-ipad">
+                                </div>
                                 <div class="services__text">
                                     <p>
                                         Головне завдання виділеного сервера – забезпечення повного доступу до
                                         програмного та апаратного забезпечення. Користувач може проводити будь-які
-                                        технічні роботи на сервері і це не завадить функціонуванню основних служб. Також
+                                        технічні роботи на сервері і це не завадить функціонуванню основних служб.
+                                        Також
                                         його використовують для забезпечення мережевої безпеки. Ще одне завдання
-                                        виділеного сервера – забезпечення безперебійного доступу до бази даних компанії.
+                                        виділеного сервера – забезпечення безперебійного доступу до бази даних
+                                        компанії.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </li>
                 </ul>
-
             </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages section section--bem">
             <div class="container">
                 <div class="advantages__wrapper">
                     <img class="advantages__img" src="images/advantages.jpg" alt="переваги">
                     <div class="advantages__box">
-                        <h2 class="advantages__title">
+                        <h2 class="advantages__title title title--bem">
                             наші переваги
                         </h2>
-                        <!-- не уверен что это список -->
                         <ul class="advantages__items">
                             <li class="advantages__item">
                                 <h3 class="advantages__subtitle">
@@ -403,7 +413,7 @@
             </div>
         </section>
 
-        <section class="statistics">
+        <section class="statistics section section--bem">
             <div class="container">
                 <ul class="statistics__wrapper">
                     <li class="statistics__item">
@@ -434,13 +444,16 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about section section--bem" id="about">
             <div class="container">
+                <h2 class="about__title title title--bem">
+                    про нас
+                </h2>
                 <div class="about__inner">
                     <div class="about__box">
-                        <h2 class="about__title">
+                        <h3 class="about__subtitle">
                             BITCODE приветствует Вас!
-                        </h2>
+                        </h3>
                         <div class="about__text">
                             <p>
                                 Компанія «Біткод» вийшла на ринок інформаційних технологій (ІТ) у 2015 році. Перед
@@ -449,15 +462,11 @@
                                 сервіс максимально адаптований для компаній малого та середнього бізнесу, включаючи
                                 специфіку процесів та цінову політику.
                             <p>
-                                Ми пишаємося, що багато наших корпоративних клієнтів за роки співпраці, що розвиваються
-                                в
-                                Компанія «Біткод» вийшла на ринок інформаційних технологій (ІТ) у 2015 році. Перед
-                                співробітниками компанії стояло завдання не лише утриматися в конкурентній середовищі, а
-                                й
-                                розвивати нові напрями для надання схеми обслуговування «Всі з одних рук». Наш сервіс
-                                максимально адаптований для компаній малого та середнього бізнесу, включаючи специфіку
-                                процесів
-                                та цінову політику.
+                                Ми пишаємось тим, що багато наших корпоративних клієнтів протягом багатьох років
+                                співпраці розвиваються з нами. Ми раді, що нам вдалося допомогти їм оптимізувати бізнес
+                                -процеси, відповідати сучасним економічним проблемам та бути успішними на ринку.
+                                Протягом багатьох років була сформована стратегія компанії, що дало змогу надійно
+                                закріпити на ІТ -ринку.
                             </p>
                             <p>
                                 Сьогодні ми готові запропонувати своїм клієнтам надійний та якісний сервіс,
@@ -466,7 +475,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- попробоваь потом включить лази режим -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -486,9 +494,9 @@
             </div>
         </section>
 
-        <section class="partners">
+        <section class="partners section section--bem" id="partners">
             <div class="container">
-                <h2 class="partners__title title">
+                <h2 class="partners__title title title--bem">
                     наші партнери
                 </h2>
                 <div class="partners__text">
@@ -498,29 +506,45 @@
                         бути для них партнерами, ми стаємо невід'ємною частиною їхнього бізнесу.
                     </p>
                 </div>
-                <div class="partners__wrapper">
-                    <img src="images/partners/forbes.png" alt="forbes">
-                    <img src="images/partners/radisson.png" alt="radisson">
-                    <img src="images/partners/vogue.png" alt="vogue">
-                    <img src="images/partners/premier.png" alt="premier">
-                    <img src="images/partners/fairmont.png" alt="fairmont">
-                    <img src="images/partners/fujiwara_yoshi.png" alt="fujiwara_yoshi">
-                    <img src="images/partners/intercontinental.png" alt="intercontinental">
-                </div>
+                <!-- альт на укр -->
+                <ul class="partners__wrapper">
+                    <li class="partners__item">
+                        <img src="images/partners/forbes.png" alt="forbes">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/radisson.png" alt="radisson">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/vogue.png" alt="vogue">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/premier.png" alt="premier">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/fairmont.png" alt="fairmont">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/fujiwara_yoshi.png" alt="fujiwara_yoshi">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/partners/intercontinental.png" alt="intercontinental">
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="form">
-            <h2 class="form__title">
-                залишити заявку
+
+        <section class="contacts" id="contacts">
+            <h2 class="contacts__title title title--bem">
+                Залишити заявку
             </h2>
-            <form class="form__form">
+            <form class="form">
                 <div class="form__wrapper">
                     <label class="sr-only" for="name-input">
                         Введіть ваше ім'я
                     </label>
                     <input class="form__input" id="name-input" type="text" name="name" placeholder="Ім'я" required
                         oninvalid="this.setCustomValidity('заповніть це поле!')">
-                    <label class="sr-only" for="email">
+                    <label class="sr-only" for="surname-input">
                         Введіть ваше Прізвище
                     </label>
                     <input class="form__input" id="surname-input" type="text" name="surname" placeholder="Прізвище"
@@ -529,62 +553,44 @@
                 <label class="sr-only" for="email-input">
                     Введіть вашу пошту
                 </label>
-                <input class="form__input" id="email-input" type="email" name="email" placeholder="Введіть вашу пошту"
+                <input class="form__email" id="email-input" type="email" name="email" placeholder="Введіть вашу пошту"
                     required oninvalid="this.setCustomValidity('заповніть це поле!')">
                 <label class="sr-only" for="tel-input">
-                    введіть номер телефону
+                    Введіть номер телефону
                 </label>
-                <input class="form__input" id="tel-input" type="tel" name="tel" placeholder="введіть номер телефону"
+                <input class="form__tel" id="tel-input" type="tel" name="tel" placeholder="Введіть номер телефону"
                     required oninvalid="this.setCustomValidity('заповніть це поле!')">
-                <textarea class="form__message" id="message" name="message" placeholder="повідомлення"></textarea>
-                <button class="form__btn" type="submit">
+                <textarea class="form__message" id="message" name="message" placeholder="Повідомлення"></textarea>
+                <button class="form__btn btn" type="submit">
                     Надіслати
                 </button>
             </form>
         </section>
-
-        <section class="">
-            <div class="container">
-
-            </div>
-        </section>
-
-
     </main>
 
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__title title title--bem">
+                    <!-- придумать название получше -->
+                    Контакти
+                </div>
+                <div class="footer__inner">
+                    <a class="footer__link-logo footer-item" href="#">
+                        <img class="footer__logo logo" src="images/logo.png" alt="Лого">
+                    </a>
+                    <a class="footer__link footer-item" href="mailto:manager@bitcode.kiev.ua">
+                        manager@bitcode.kiev.ua
+                    </a>
+                    <a class="footer__link footer-item" href="tel:+380681152961">
+                        38 (068) 115-29-61
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-
-    <!--
-<a class="video" data-fancybox style="background-image: url('images/video-bg.jpg')"
-    href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
-    <span class="sr-only">play video</span>
-</a>
--->
-
-    <!--
-  <form class="footer-top__form">
-      <label class="sr-only" for="email">
-          Enter your email
-      </label>
-      <input class="footer-top__input" id="email-input" type="email" name="email" placeholder="Your Email" required
-          oninvalid="this.setCustomValidity('fill in this field!')">
-      <button class="footer-top__btn" type="submit">
-          <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
-              xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="17" viewBox="0 0 20 17">
-              <image id="send" width="20" height="17"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABW0lEQVQ4jaWUTytEURjGf1NiJDTjfzNlYWFhKysbvoaV72LpOyhSIikmyUiztRKmsBYz2SgNOz169d66/5sZT91u9557fud5n/fcU5B0ApwBF8Ab/5QBO8AI8AAY/Bi47xsrqaWo2pL2Ja1LGpRELxcOSNOPpIakTUmVbqFWchuYSViP6g6oAQdAMzEaK/krxV2W3j2ONUnFLId7wAJQAqaAsjUrsXJSDcDm1oGXYLTwFySMAhNeukHngKo/230emAbGgaEYuulxHAK3ATBPw76YOV8EloFVYAUYCM2zPbwVfmGrT7qTwGUFmHWXVR+3aoohWAu4BI4sBnu5DSx5hmWfVMpxHOjJM6xFfgRJ3xkdTVNH0rWkDUljaV02h5+eU55egXMvq57zXSTUND0DO8Ap8Jgy3hXQDosbYNdPoY9uQGFgsK+sWwawsq56gcSBdmxZLrYxrcT+BfwCdYhXWkZ0abIAAAAASUVORK5CYII=" />
-          </svg>
-          <span class="sr-only">send message button</span>
-      </button>
-  </form>
-
--->
-
     <script src="js/main.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
 
 </body>
 
