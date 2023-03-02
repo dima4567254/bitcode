@@ -11,14 +11,16 @@
 
 
 <!--
-     <!-- попробоваь потом включить лази режим 472 
+
         альт 
         переименовать картинки
 
-        фокус
         скроллы
-        кремт
-      
+
+      потом проверить на 320 скролл
+      на ноуте н етак ездит
+      поставить фавикон
+      проверить можно ли сделать отступы меньше 100 на 320
 -->
 
 <body>
@@ -196,7 +198,7 @@
             </div>
         </section>
 
-        <section class="services" id="services">
+         <section class="services section--bem" id="services">
             <div class="container">
                 <h2 class="services__title title title--bem">
                     Послуги
@@ -352,12 +354,15 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 
         <section class="advantages section section--bem">
             <div class="container">
                 <div class="advantages__wrapper">
-                    <img class="advantages__img" src="images/advantages.jpg" alt="переваги">
+                    <picture class="advantages__picture">
+                        <source srcset="images/advantages-mobile.jpg" media="(max-width: 768px)">
+                        <img class="advantages__img" src="images/advantages.jpg" alt="переваги">
+                    </picture>
                     <div class="advantages__box">
                         <h2 class="advantages__title title title--bem">
                             наші переваги
@@ -451,9 +456,9 @@
                 </h2>
                 <div class="about__inner">
                     <div class="about__box">
-                        <h3 class="about__subtitle">
+                        <div class="about__subtitle">
                             BITCODE приветствует Вас!
-                        </h3>
+                        </div>
                         <div class="about__text">
                             <p>
                                 Компанія «Біткод» вийшла на ринок інформаційних технологій (ІТ) у 2015 році. Перед
@@ -478,13 +483,24 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img class="swiper__img" src="images/10.jpg" alt="">
+                                <picture class="swiper__picture">
+                                    <source srcset="images/slider/slide_1-mini.jpg" media="(max-width: 992px)">
+                                    <source srcset="images/slider/slide-1.jpg" media="(max-width: 550px)">
+                                    <img class="swiper__img" src="images/slider/slide-1.jpg" alt="">
+                                    <!-- !!!! -->
+                                </picture>
                             </div>
                             <div class="swiper-slide">
-                                <img class="swiper__img" src="images/111.jpg" alt="">
+                                <picture class="swiper__picture">
+                                    <source srcset="images/slider/slide_2-mini.jpg" media="(max-width: 992px)">
+                                    <img class="swiper__img" src="images/slider/slide-2.jpg" alt="">
+                                </picture>
                             </div>
                             <div class="swiper-slide">
-                                <img class="swiper__img" src="images/11.jpg" alt="">
+                                <picture class="swiper__picture">
+                                    <source srcset="images/slider/slide_3-mini.jpg" media="(max-width: 992px)">
+                                    <img class="swiper__img" src="images/slider/slide-3.jpg" alt="">
+                                </picture>
                             </div>
                             <!-- заполнить альт -->
                         </div>
@@ -576,19 +592,19 @@
                     Контакти
                 </div>
                 <div class="footer__inner">
-                    <a class="footer__link-logo footer-item" href="#">
+                    <a class=" footer__link-logo footer__link--indent" href="#">
                         <img class="footer__logo logo" src="images/logo.png" alt="Лого">
                     </a>
-                    <a class="footer__link footer-item" href="mailto:manager@bitcode.kiev.ua">
+                    <a class="footer__link footer__link--indent" href="mailto:manager@bitcode.kiev.ua">
                         manager@bitcode.kiev.ua
                     </a>
-                    <a class="footer__link footer-item" href="tel:+380681152961">
+                    <a class="footer__link footer__link--indent" href="tel:+380681152961">
                         38 (068) 115-29-61
                     </a>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
 
     <script src="js/main.min.js"></script>
 
