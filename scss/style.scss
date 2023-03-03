@@ -9,12 +9,12 @@
 // сделать полоску серой
 // где то лишний 100% 447 проверить на больщом экране
 // адаптировать правитьно картинку 528
-// убрать полоски в сервисе
 
-//точки и правильно слайдер
+
+
 
 // сделать контент по середине
-// остоновился на точках в слайдере
+
 .menu {
     &__btn {
         display: none;
@@ -39,7 +39,7 @@
 }
 
 // .header-add {
-    
+
 //     background-color: red;
 // }
 
@@ -378,6 +378,7 @@
 }
 
 .services {
+
     // остоновился на 320
     &__inner {
         display: flex;
@@ -385,15 +386,16 @@
 
         @media (max-width: 992px) {
             display: block;
+            height: auto;
             // height: 100%; //!!!
         }
 
-        @media (max-width: 576px) {
-            height: auto;
-            // height: 415px;
-            // height: 73vh;
-            // align-items: center;
-        }
+        // @media (max-width: 768px) {
+        
+        //     // height: 415px;
+        //     // height: 73vh;
+        //     // align-items: center;
+        // }
 
         &:focus {
             color: transparent;
@@ -455,8 +457,17 @@
         width: 100%;
         height: 100%;
 
+        @media (max-width: 992px) {
+            height: 300px;
+        }
+
+        @media (max-width: 768px) {
+            height: 250px;
+        }
+
         @media (max-width: 576px) {
-            // max-height: 500px;
+            height: 350px;
+            // потом возможно в вх
         }
     }
 
@@ -471,21 +482,21 @@
         width: 100%;
         height: 100%;
 
-        @media (max-width: 1200px) {
-            // height: 10%;
-        }
+        // @media (max-width: 1200px) {
+        //     // height: 10%;
+        // }
 
-        @media (max-width: 992px) {
-            // height: 50vh;
-        }
+        // @media (max-width: 992px) {
+        //     // height: 50vh;
+        // }
 
         // @media (max-width: 768px) {
         //     height: 45vh;
         // }
 
-        @media (max-width: 576px) {
-            // height: 70vh;
-        }
+        // @media (max-width: 576px) {
+        //     // height: 70vh;
+        // }
     }
 
     &__text {
@@ -499,6 +510,25 @@
         display: flex;
         align-items: center;
         transition: .5s;
+        z-index: 999;
+        line-height: 1.5;
+
+        // ! ! !исправить
+        @media (max-width: 1200px) {
+            line-height: 1.4;
+        }
+
+        @media (max-width: 992px) {
+            line-height: 1.3;
+        }
+
+        @media (max-width: 768px) {
+            line-height: 1.2;
+        }
+
+        @media (max-width: 576px) {
+            line-height: 1.1;
+        }
 
         @media (max-width: 1200px) {
             opacity: 1;
@@ -509,9 +539,9 @@
             padding: 20px;
         }
 
-        @media (max-width: 576px) {
-            display: block;
-        }
+        // @media (max-width: 576px) {
+        //     display: flex;
+        // }
     }
 }
 
