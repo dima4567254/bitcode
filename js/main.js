@@ -1,11 +1,115 @@
 
+
+
+
+// $(function () {
+//     show()
+    // function show() {
+    // // let modal = document.querySelector('.btn');
+
+    // $(window).scroll(function(){
+    //     header.style.display = 'block';
+    //     header.addClass('header-add');
+    // })
+    // document.querySelector('link').href = 'style3.css';
     
+    
+    // console.log(header.style.display = "block");
+    // header.scroll = show;
+
+    
+// })
+
+
+        //  } 
+// console.log( show('урааа'));
+
+
+
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 690) {
+    //         header.addClass('header-fixed');
+    //         add();
+    //     } else {
+    //         header.removeClass('header-fixed');
+    //     }
+    // });
+    // $(window).scroll(function(){ show_graphics(); });
+
+    // $(window).scroll(function(){//записать в снипеты 
+    //     // document.querySelector('.header');
+    //     const header = $('.header');
+    //     header.style.display = "block";
+    //     // document.querySelector('.header');
+    //     // header.addClass('header-add');
+    //     console.log(header.style.display = "block");
+    //     });
+    
+    // });
+    
+
+
+// document.querySelector('.onmousewheel').onmouseleave = function () {
+//     // мышь колесико
+//     console.log('wheel');
+//     return false
+// }  
+
+
+
+
+
+// add();
+// function add() {
+//     document.querySelector('.header').onmouseleave = function () {
+//         console.log('wheel');
+//         header.addClass('header-add');
+//             return false;
+//         }  
+//     }
+
+        
         $(".menu a").on("click", function (event) {
             event.preventDefault();
             var id = $(this).attr('href'),
                 top = $(id).offset().top;
             $('body,html').animate({ scrollTop: top }, 1500);
         });
+        
+        // function show() {
+        //     // $(window).onmouseenter(function(){
+                
+        //     document.querySelector('html').onmouseenter ;
+        //     console.log(document.querySelector('html').onmouseenter );
+            
+        //     // header.removeClass()('header-fixed');
+        //     // header.removeClass('header-fixed');
+        // } ;
+        // show();
+        // // show2();
+        // console.log('header2.style.display = "block"');
+        // let header2 = document.querySelector('.header');
+        // const header = $('.header');
+        // const body = $('body,html');
+
+
+        // body.mouseover.mouseout = show2;
+        // function show2() {
+        // header2.style.display = "block";
+        // }
+
+
+
+
+        
+        // header.scroll = show;
+        // $("p:even").removeClass("blue");
+
+        // document.querySelector('.onmousewheel').onmouseleave = function () {
+        //     // мышь колесико
+        //     console.log('wheel');
+        //     return false
+        // }  
     
         $('.menu__btn, .menu a').on('click', function () {
             $('.menu__btn, .menu__mobile').toggleClass('active');
