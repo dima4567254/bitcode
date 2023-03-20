@@ -6,14 +6,13 @@
 
 // разобраться в отступах где какие сколько
 // в первую очередь у титулов а потом остальные блоки
-// сделать полоску серой
+
 // где то лишний 100% 447 проверить на больщом экране
 // адаптировать правитьно картинку 528
 
+// фавикон
 
 
-
-// сделать контент по середине
 
 .menu {
     &__btn {
@@ -25,8 +24,6 @@
     }
 }
 
-
-
 .header {
     position: absolute;
     top: 0;
@@ -34,18 +31,7 @@
     right: 0;
     z-index: 999;
     background-color: transparent;
-    background-color: rgba(0, 0, 0, 0.5);
-    // display: none;
 }
-
-// .header-add {
-
-//     background-color: red;
-// }
-
-// .header-fixed {
-//     display: none;
-// }
 
 .menu {
     padding: 20px 0;
@@ -260,7 +246,6 @@
         background-color: $white;
         border-radius: 4px;
         max-width: 230px;
-        display: block;
 
         @media (max-width: 576px) {
             width: 100%;
@@ -285,11 +270,10 @@
     &__item {
         max-width: 360px;
         cursor: pointer;
-        position: relative;
     }
 
     &__box {
-        cursor: pointer;
+        position: relative;
 
         &::before {
             content: "";
@@ -335,9 +319,21 @@
     }
 
     &__img {
-        width: 840px;
+        width: 360px;
         height: 395px;
         object-fit: cover;
+
+        // @media (max-width: 1200px) {
+        //     height: 350px;
+        // }
+
+        // @media (max-width: 768px) {
+        //     height: 325px;
+        // }
+
+        // @media (max-width: 575px) {
+        //     height: 290px;
+        // }
     }
 
     &__items {
@@ -391,7 +387,7 @@
         }
 
         // @media (max-width: 768px) {
-        
+
         //     // height: 415px;
         //     // height: 73vh;
         //     // align-items: center;
@@ -563,27 +559,29 @@
     }
 
     &__img {
-
         height: 100vh;
         width: 100%;
 
         @media (max-width: 992px) {
             height: 625px;
-            width: 70%;
+            // width: 70%;
         }
 
         @media (max-width: 768px) {
-            max-width: 50vw;
+            // max-width: 50vw;
             display: block;
-            height: 50vh;
+            // height: 50vh;
             margin: 0 auto 40px;
+            height: 350px;
+            width: 350px;
         }
 
         @media (max-width: 576px) {
-            margin: 0 auto 20px;
+            margin: 0 0 20px 0;
             max-width: 100vw;
             height: 290px;
             width: 290px;
+            // display: flex;
         }
     }
 
@@ -631,6 +629,10 @@
         font-weight: 600;
         color: $black3;
     }
+
+    &__text {
+        font-size: 18px;
+    }
 }
 
 .statistics {
@@ -641,11 +643,7 @@
     background-repeat: no-repeat;
     position: relative;
     height: 50vh;
-    // display: grid;
-    // align-items: center;
-    // justify-items: center;
     display: flex;
-    // justify-content: space-between;
     align-items: center;
 
     @media (max-width: 992px) {
@@ -669,7 +667,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: rgba(115, 80, 64, 0.3);
+        background: rgba(0, 0, 0, 0.3);
     }
 
     &__wrapper {
@@ -679,8 +677,6 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 40px;
-
-        //360px
 
         @media (max-width: 992px) {
             justify-content: center;
@@ -696,10 +692,7 @@
         color: $white;
         font-weight: 600;
         padding-bottom: 30px;
-
-        @media (max-width: 992px) {
-            // color: $black;
-        }
+        z-index: 1;
 
         @media (max-width: 576px) {
             width: 100%;
@@ -713,6 +706,7 @@
 
     &__number {
         font-size: 96px;
+        // потом уменьшить в оригинале
     }
 }
 
@@ -732,10 +726,15 @@
 
         @media (max-width: 992px) {
             width: 100%;
+            margin: 0 0 40px 0;
         }
 
-        @media (max-width: 576px) {
-            margin-right: 0px;
+        @media (max-width: 768px) {
+            margin: 0 0 30px 0;
+        }
+
+        @media (max-width: 575px) {
+            margin: 0 0 20px 0;
         }
     }
 
@@ -773,10 +772,12 @@
     }
 
     &__text p {
-        margin-bottom: 30px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
 
-        @media (max-width: 576px) {
-            margin-bottom: 20px;
+            @media (max-width: 575px) {
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -802,20 +803,20 @@
             // height: 80vh;
         }
 
-        // @media (max-width: 992px) {
-        //     width: 100vw;
-        //     height: 100%;
-        // }
+        @media (max-width: 992px) {
+            margin: 0 auto;
+            display: flex;
+        }
 
-        // @media (max-width: 768px) {
-        //     height: 790px;
-        // }
+        @media (max-width: 768px) {
+            height: 350px;
+            width: 350px;
+        }
 
-        // @media (max-width: 576px) {
-        //     height: 35vh;
-        //     height: 550px;
-        //     // width: 400px;
-        // }
+        @media (max-width: 576px) {
+            height: 290px;
+            width: 290px;
+        }
     }
 }
 
@@ -983,7 +984,7 @@
     background-position: center;
     background-size: cover;
     padding: 75px 0;
-    height: 55vh;
+    height: 45vh;
     color: $white;
     font-size: 24px;
     background-color: rgba(0, 0, 0, 0.35);
@@ -1037,7 +1038,6 @@
         gap: 20px;
 
         @media (max-width: 992px) {
-            // justify-content: center;
             text-align: center;
         }
     }
@@ -1058,7 +1058,6 @@
             color: $active;
         }
 
-        // скорей всего не нужгно!!!
         &--indent {
             &:not(:last-child) {
                 margin-right: 40px;

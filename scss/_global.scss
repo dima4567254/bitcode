@@ -5,7 +5,7 @@ body {
 
 body {
     // потом все проверить
-    font-size: 1rem; //!!!
+    font-size: 16px; 
     font-weight: 400;
     font-family: 'Poppins';
     line-height: 1.5;
@@ -136,11 +136,6 @@ body {
         color: $active;
     }
 }
-
-
-
-
-
 
 // [class*="__container"] {
 //     background-color: red;
