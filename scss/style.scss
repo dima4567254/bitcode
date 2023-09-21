@@ -4,32 +4,30 @@
 @import 'global';
 @import 'libs';
 
+// < !-- фокусы+ -->
+// валидатор+
+// боди+
+// сайт укр
+
+
+// < !-- ---------------------------- -->
+// < !-- разобратся с маленькими картинками -->
+// < !-- готово -->
+// скроллы
+// < !-- назвать правильно отступы -->
+// < !--проверить можно ли сделать отступы меньше 100 на 320 -->
+// адаптировать правитьно картинку 528
 // разобраться в отступах где какие сколько
 // в первую очередь у титулов а потом остальные блоки
-
-// где то лишний 100% 447 проверить на больщом экране
-// адаптировать правитьно картинку 528
-
-// фавикон
-
-
-
-.menu {
-    &__btn {
-        display: none;
-
-        @media (max-width: 992px) {
-            display: block;
-        }
-    }
-}
+// < !-- переименовать картинки -->< !-- альт -->< !-- поставить фавикон -->< !-- вроде подписал иконки -->< !-- // оставил альт компании а анг -->
+// < !-- <picture class="advantages__picture"><source srcset="images/advantages-mobile.webp"media="(max-width: 768px)"><img class="advantages__img"src="images/advantages.webp"alt="переваги"></picture>-->< !-- ! ! !посмотреть на повторы переменные -->
 
 .header {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 300;
     background-color: transparent;
 }
 
@@ -62,7 +60,7 @@
             text-align: center;
 
             &:not(:last-child) {
-                margin-right: 0px;
+                margin-right: 0;
             }
         }
     }
@@ -72,7 +70,7 @@
         outline-offset: 5px;
         text-transform: uppercase;
         color: $white;
-        transition: border-bottom 0.5s;
+        transition: border-bottom .5s;
         border-bottom: 1px solid transparent;
 
         @media (max-width: 992px) {
@@ -95,20 +93,13 @@
         }
     }
 
-    &__link-logo {
-        margin: 0px 50px;
-        line-height: 0;
+    &__logo {
+        margin: 0 50px;
 
         @media (max-width: 992px) {
             margin: 0;
             z-index: 10;
         }
-    }
-
-    &__logo {
-        width: 150px;
-        height: 55px;
-        object-fit: cover;
     }
 
     &__mobile {
@@ -119,7 +110,7 @@
             display: flex;
             transform: translateY(-200%);
             position: absolute;
-            top: 0px;
+            top: 0;
             width: 100%;
             left: 0;
             flex-direction: column;
@@ -150,7 +141,12 @@
             padding: 0;
             z-index: 10;
 
-            span {
+            span,
+            &::before,
+            &::after {
+                transition: all .5s;
+                position: absolute;
+                content: '';
                 height: 3px;
                 width: 100%;
                 background-color: $btn-menu;
@@ -160,13 +156,9 @@
             &::after {
                 position: absolute;
                 content: '';
-                height: 3px;
-                width: 100%;
-                background-color: $btn-menu;
             }
 
             &::before {
-                content: '';
                 top: 0;
             }
 
@@ -176,23 +168,23 @@
         }
     }
 
-    .menu__btn.active span {
+    &__btn.active span {
         transform: scale(0);
     }
 
-    .menu__btn.active:before {
+    &__btn.active:before {
         transform: rotate(45deg);
         top: 9px;
     }
 
-    .menu__btn.active::after {
+    &__btn.active::after {
         transform: rotate(-45deg);
         bottom: 10px;
     }
 }
 
 .intro {
-    background-image: url('../images/introbg1.jpg');
+    background-image: url('../images/introbg1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -281,10 +273,10 @@
             top: 0%;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(2, 38, 67, 0.7);
+            background-color: rgba(2, 38, 67, 0.7);
             width: 100%;
             height: 100%;
-            background-image: url('../images/logo.png');
+            background-image: url('../images/logo.webp');
             background-repeat: no-repeat;
             background-position: 50% 40%;
             opacity: 0;
@@ -322,18 +314,6 @@
         width: 360px;
         height: 395px;
         object-fit: cover;
-
-        // @media (max-width: 1200px) {
-        //     height: 350px;
-        // }
-
-        // @media (max-width: 768px) {
-        //     height: 325px;
-        // }
-
-        // @media (max-width: 575px) {
-        //     height: 290px;
-        // }
     }
 
     &__items {
@@ -350,7 +330,10 @@
     &__items li {
         font-size: 20px;
         color: $black3;
-        margin-bottom: 20px;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
     }
 
     &__subtitle {
@@ -374,24 +357,14 @@
 }
 
 .services {
-
-    // остоновился на 320
     &__inner {
         display: flex;
-        height: 65vh;
+        max-height: 395px;
 
         @media (max-width: 992px) {
             display: block;
             height: auto;
-            // height: 100%; //!!!
         }
-
-        // @media (max-width: 768px) {
-
-        //     // height: 415px;
-        //     // height: 73vh;
-        //     // align-items: center;
-        // }
 
         &:focus {
             color: transparent;
@@ -400,7 +373,7 @@
         &:hover {
             .services__text {
                 opacity: 1;
-                background: rgba(2, 38, 67, 0.7);
+                background-color: rgba(2, 38, 67, 0.7);
             }
         }
 
@@ -451,48 +424,33 @@
     &__box {
         position: relative;
         width: 100%;
-        height: 100%;
 
         @media (max-width: 992px) {
             height: 300px;
         }
 
         @media (max-width: 768px) {
-            height: 250px;
+            height: 350px;
         }
 
         @media (max-width: 576px) {
             height: 350px;
-            // потом возможно в вх
         }
-    }
-
-    &__images {
-        transition: color 0.5s;
-        line-height: 0;
-        height: 100%; //!!!
     }
 
     &__img {
         object-fit: cover;
         width: 100%;
         height: 100%;
+        vertical-align: text-bottom;
 
-        // @media (max-width: 1200px) {
-        //     // height: 10%;
-        // }
+        @media (max-width: 992px) {
+            width: 100%;
+        }
 
-        // @media (max-width: 992px) {
-        //     // height: 50vh;
-        // }
-
-        // @media (max-width: 768px) {
-        //     height: 45vh;
-        // }
-
-        // @media (max-width: 576px) {
-        //     // height: 70vh;
-        // }
+        @media (max-width: 768px) {
+            object-position: 0% 65%;
+        }
     }
 
     &__text {
@@ -506,38 +464,16 @@
         display: flex;
         align-items: center;
         transition: .5s;
-        z-index: 999;
-        line-height: 1.5;
-
-        // ! ! !исправить
-        @media (max-width: 1200px) {
-            line-height: 1.4;
-        }
-
-        @media (max-width: 992px) {
-            line-height: 1.3;
-        }
-
-        @media (max-width: 768px) {
-            line-height: 1.2;
-        }
-
-        @media (max-width: 576px) {
-            line-height: 1.1;
-        }
+        z-index: 300;
 
         @media (max-width: 1200px) {
             opacity: 1;
-            background: rgba(2, 38, 67, 0.7);
+            background-color: rgba(2, 38, 67, 0.7);
         }
 
         @media (max-width: 992px) {
             padding: 20px;
         }
-
-        // @media (max-width: 576px) {
-        //     display: flex;
-        // }
     }
 }
 
@@ -564,13 +500,10 @@
 
         @media (max-width: 992px) {
             height: 625px;
-            // width: 70%;
         }
 
         @media (max-width: 768px) {
-            // max-width: 50vw;
             display: block;
-            // height: 50vh;
             margin: 0 auto 40px;
             height: 350px;
             width: 350px;
@@ -581,7 +514,6 @@
             max-width: 100vw;
             height: 290px;
             width: 290px;
-            // display: flex;
         }
     }
 
@@ -637,7 +569,7 @@
 
 .statistics {
     margin: 100px 0;
-    background-image: url('../images/statistics.jpg');
+    background-image: url('../images/statistics.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -691,8 +623,12 @@
     &__item {
         color: $white;
         font-weight: 600;
-        padding-bottom: 30px;
+
         z-index: 1;
+
+        &:not(:last-child) {
+            padding-bottom: 30px;
+        }
 
         @media (max-width: 576px) {
             width: 100%;
@@ -706,7 +642,22 @@
 
     &__number {
         font-size: 96px;
-        // потом уменьшить в оригинале
+
+        @media (max-width: 1200px) {
+            font-size: 80px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 65px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 49px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 34px;
+        }
     }
 }
 
@@ -750,6 +701,7 @@
 
         @media (max-width: 992px) {
             font-size: 30px;
+            text-align: center;
         }
 
         @media (max-width: 768px) {
@@ -782,10 +734,10 @@
     }
 }
 
-.swiper {
+.slider {
     width: 50%;
     margin-left: 30px;
-    padding-bottom: 40px;
+    overflow: hidden;
 
     @media (max-width: 992px) {
         width: 100%;
@@ -794,14 +746,7 @@
 
     &__img {
         width: 560px;
-        // height: 790px;
-        // height: 80vh;
         height: 100%;
-        // !!!
-
-        @media (max-width: 1200px) {
-            // height: 80vh;
-        }
 
         @media (max-width: 992px) {
             margin: 0 auto;
@@ -818,21 +763,6 @@
             width: 290px;
         }
     }
-}
-
-.swiper-slide {
-    // @media (max-width: 1200px) {
-    //     height: 100vh;
-    //     // padding-bottom: 40px;
-    // }
-
-    // @media (max-width: 992px) {
-    //     width: 100%;
-    // }
-
-    // @media (max-width: 576px) {
-    //     height: 70vh;
-    // }
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -856,17 +786,15 @@
     background: $black;
 }
 
-
 .partners {
     &__text {
         font-size: 24px;
         text-align: center;
         margin-bottom: 70px;
-        // margin-bottom: 50px; было
 
         @media (max-width: 1200px) {
             margin-bottom: 60px;
-            text-align: start; //проверить
+            text-align: start;
         }
 
         @media (max-width: 992px) {
@@ -929,7 +857,7 @@
             margin-right: 20px;
 
             @media (max-width: 576px) {
-                margin-right: 0px;
+                margin-right: 0;
             }
         }
     }
@@ -977,9 +905,8 @@
     }
 }
 
-// починить футер
 .footer {
-    background-image: url('../images/footer.jpg');
+    background-image: url('../images/footer.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1005,7 +932,6 @@
         z-index: -1;
     }
 
-    // 1200 327px
     @media (max-width: 992px) {
         padding: 70px 0;
     }
@@ -1017,13 +943,6 @@
     @media (max-width: 576px) {
         padding: 20px 0;
         font-size: 20px;
-    }
-
-    &__wrapper {
-        // height: 20vh;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
     }
 
     &__title {
@@ -1044,7 +963,7 @@
 
     &__link {
         font-weight: 600;
-        transition: color 0.5s;
+        transition: color .5s;
 
         &:focus {
             color: $focus;
@@ -1063,7 +982,7 @@
                 margin-right: 40px;
 
                 @media (max-width:992px) {
-                    margin-right: 0px;
+                    margin-right: 0;
                 }
             }
 
@@ -1072,10 +991,4 @@
             }
         }
     }
-
-    &__link-logo {
-        line-height: 0;
-    }
 }
-
-@import 'media';
