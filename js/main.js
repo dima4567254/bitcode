@@ -21,13 +21,13 @@ $('.menu__btn, .menu a').on('click', function () {
     // для крестика и для меню и что бы закрывалось меню после выбора сcылки
 });
 
-$('.offer__item--1').on('click', function () {
-    $('.offer__items--1').slideToggle();
+$('.offer__item--services').on('click', function () {
+    $('.offer__items--services').slideToggle();
 });
-$('.offer__item--2').on('click', function () {
-    $('.offer__items--2').slideToggle();
+$('.offer__item--business').on('click', function () {
+    $('.offer__items--business').slideToggle();
 });
-$('.offer__item--3 ').on('click', function () {
-    $('.offer__items--3').slideToggle();
+$('.offer__item--advice ').on('click', function () {
+    $('.offer__items--advice').slideToggle();
 });
 

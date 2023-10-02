@@ -168,16 +168,16 @@
         }
     }
 
-    &__btn.active span {
+    &.active span {
         transform: scale(0);
     }
 
-    &__btn.active:before {
+    &.active:before {
         transform: rotate(45deg);
         top: 9px;
     }
 
-    &__btn.active::after {
+    &.active::after {
         transform: rotate(-45deg);
         bottom: 10px;
     }
@@ -270,7 +270,7 @@
         &::before {
             content: "";
             position: absolute;
-            top: 0%;
+            top: 0;
             left: 50%;
             transform: translateX(-50%);
             background-color: rgba(2, 38, 67, 0.7);
@@ -357,6 +357,8 @@
 }
 
 .services {
+    padding: 100px 0;
+
     &__inner {
         display: flex;
         max-height: 395px;
@@ -449,7 +451,7 @@
         }
 
         @media (max-width: 768px) {
-            object-position: 0% 65%;
+            object-position: 0 65%;
         }
     }
 
