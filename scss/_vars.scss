@@ -1,103 +1,16 @@
-/*$Butler: 'Butler',
-sans-serif;*/
-
-
-$orange: #FF9900;
 $active: #fb0909;
-$focus: #14B4BE;
-$hover: #14B4BE;
-$ac: #fcd7b6;
-$green: #14B4BE;
-$white: #FFFFFF;
-$black: #000000;
-$black2: #212529;
-$black3: #022643;
-$title: #436372;
+$focus: pink;
+$ac: #fcd7b6;//4
+$green: #14B4BE;//4
+$white: #FFFFFF;//15
+$black: #000000;//12
+$black2: #212529;//1
+$black3: #022643;//8
 $btn-menu:silver;
 
-
-/*$ac: #fcd7b6;
-
-/*accent*/
-
-$antique: #fde7d3;
-$default: #243f4d;
-$title: #436372;
-$Cream: #feefe2;
-$Crayola: #c2d2db;
-$red: #e72828;
-$red1 :#fe3e57;
-$orange: #ffa500;
-
-$active: #fb0909;
-$ac: #fcd7b6;
-$green: #14B4BE;
-
-
 //section
-$padding-main:100px ;
-$padding-1200:60px ;
-$padding-992:50px ;//70
-$padding-768:40px ;//50
-$padding-576:30px ;
-
-// padding: $padding-main 15px;
-
-// @media (max-width: 992px) {
-//     padding: $padding-992 15px;
-// }
-
-// @media (max-width: 768px) {
-//     padding: $padding-768 15px;
-// }
-
-// @media (max-width: 576px) {
-//     padding: $padding-576 15px;
-// }
-
-// Ограничивающий контейнер ======================================================================================================================================================================================================================
-
-/*
-(i) Стили будут применяться ко 
-всем классам содержащим *__container
-Например header__container, main__container и т.д.
-Снипет (HTML): cnt
-// */
-// @if ($responsiveType==1) {
-// 	// Отзывчивая
-// 	[class*="__container"] {
-// 		@if ($maxWidthContainer>0) {
-// 			max-width: rem($maxWidthContainer);
-// 			box-sizing: content-box;
-// 			margin: 0 auto;
-// 		}
-// 		@if ($containerPadding>0) {
-// 			padding: 0 rem(math.div($containerPadding, 2));
-// 		}
-// 	}
-// } @else {
-// 	// По брейк-поинтам
-// 	[class*="__container"] {
-// 		margin: 0 auto;
-// 		@if ($maxWidthContainer>0) {
-// 			max-width: rem($maxWidthContainer);
-// 			box-sizing: content-box;
-// 		} @else {
-// 			@if ($containerPadding>0) {
-// 				padding: 0 rem(math.div($containerPadding, 2));
-// 			}
-// 		}
-// 		@media (max-width: $pc) {
-// 			max-width: rem(970);
-// 		}
-// 		@media (max-width: $tablet) {
-// 			max-width: rem(750);
-// 		}
-// 		@media (max-width: $mobile) {
-// 			max-width: none;
-// 			@if ($containerPadding>0 and $maxWidthContainer>0) {
-// 				padding: 0 rem(math.div($containerPadding, 2));
-// 			}
-// 		}
-// 	}
-// }
+$padding-main:100px;
+$padding-1200:85px;
+$padding-992:70px;
+$padding-768:55px;
+$padding-576:40px;

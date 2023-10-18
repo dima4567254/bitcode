@@ -4,8 +4,7 @@ body {
 }
 
 body {
-    // потом все проверить
-    font-size: 1rem; //!!!
+    font-size: 16px;
     font-weight: 400;
     font-family: 'Poppins';
     line-height: 1.5;
@@ -40,66 +39,48 @@ body {
     border: 0;
 }
 
-
 .title {
     font-size: 36px;
     text-align: center;
-    letter-spacing: 0.04em;
+    letter-spacing: .04em;
     text-transform: uppercase;
     color: $black3;
+    margin-bottom: 70px;
 
     @media (max-width: 1200px) {
         font-size: 34px;
+        margin-bottom: 60px;
     }
 
     @media (max-width: 992px) {
         font-size: 32px;
+        margin-bottom: 50px;
     }
 
     @media (max-width: 768px) {
         font-size: 30px;
+        margin-bottom: 40px;
     }
 
     @media (max-width: 576px) {
         font-size: 26px;
-    }
-
-    &--bem {
-        margin-bottom: 70px;
-
-        @media (max-width: 1200px) {
-            margin-bottom: 60px;
-        }
-
-        @media (max-width: 992px) {
-            margin-bottom: 50px;
-        }
-
-        @media (max-width: 768px) {
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 576px) {
-            margin-bottom: 30px;
-        }
+        margin-bottom: 30px;
     }
 }
 
 .section {
-    &--bem {
-        padding: $padding-main 0;
+    padding: $padding-main 0;
 
-        @media (max-width: 992px) {
-            padding: $padding-992 0;
-        }
+    @media (max-width: 992px) {
+        padding: $padding-992 0;
+    }
 
-        @media (max-width: 768px) {
-            padding: $padding-768 0;
-        }
+    @media (max-width: 768px) {
+        padding: $padding-768 0;
+    }
 
-        @media (max-width: 576px) {
-            padding: $padding-576 0;
-        }
+    @media (max-width: 576px) {
+        padding: $padding-576 0;
     }
 }
 
@@ -122,7 +103,7 @@ body {
     font-weight: 600;
     padding: 12px 24px;
     text-transform: uppercase;
-    transition: color 0.5s;
+    transition: color .5s;
 
     &:focus {
         color: $focus;
@@ -137,17 +118,12 @@ body {
     }
 }
 
+.logo {
+    line-height: 0;
 
-
-
-
-
-// [class*="__container"] {
-//     background-color: red;
-// }
-
-
-// что добавить в след проэкт
-// footer__link--indent
-
-// $btn-menu:silver;
+    &__img {
+        width: 150px;
+        height: 55px;
+        object-fit: cover;
+    }
+}
